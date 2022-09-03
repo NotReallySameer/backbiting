@@ -25,20 +25,20 @@ from pyrogram.types import (Message,
 from data import whispers
 
 LEARN_TEXT = (
-    "This bot works only in inline mode, a example use would be like "
-    "this:\n\n"
-    "- Write a whisper to @username\n"
-    "`@ezWhisperBot @username some text here`\n\n"
-    "- Write a whisper which anyone can read it multiple times\n"
-    "`@ezWhisperBot @ some text here`\n\n"
-    "- Whisper to the first one who open it (can also be used in PM)\n"
-    "`@ezWhisperBot some text here`"
+    "**This bot works only in inline mode, a example use would be like** "
+    "**this**:\n\n"
+    "➛ Write a whisper to @username\n"
+    "`@lyfsbot @username some text here`\n\n"
+    "➛ Write a whisper which anyone can read it multiple times\n"
+    "`@lyfsbot @ some text here`\n\n"
+    "➛ Whisper to the first one who open it (can also be used in PM)\n"
+    "`@lyfsbot some text here`"
 )
 LEARN_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "Next",
+                "➡️ Next",
                 callback_data="learn_next"
             )
         ]
@@ -46,27 +46,24 @@ LEARN_REPLY_MARKUP = InlineKeyboardMarkup(
 )
 
 DEFAULT_TEXT = (
-    "This bot allows you to send whisper messages, "
-    "works only in inline mode\n\n"
-    "[Source Code](https://github.com/dashezup/ezWhisperBot)"
-    " | [Developer](https://t.me/dashezup)"
-    " | [Support Chat](https://t.me/ezupdev)"
+    "**This bot allows you to send whisper messages, **"
+    "**works only in inline mode**\n\n"
 )
 DEFAULT_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "Select a Chat to Try",
+                "🍁 Select a Chat to Try",
                 switch_inline_query=""
             ),
             InlineKeyboardButton(
-                "Try in This Chat",
+                "👀 Try in This Chat",
                 switch_inline_query_current_chat=""
             )
         ],
         [
             InlineKeyboardButton(
-                "My Whispers",
+                "🗂️ My Whispers",
                 callback_data="list_whispers"
             )
         ]
