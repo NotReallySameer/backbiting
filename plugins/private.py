@@ -53,7 +53,7 @@ DEFAULT_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "☘️ Select to Try ",
+                "☘️ Try whisper ",
                 switch_inline_query=""
             ),
             InlineKeyboardButton(
@@ -64,7 +64,7 @@ DEFAULT_REPLY_MARKUP = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(
                 "🧑🏻‍💻 Creator",
-                "https://t.me/VasuXD"
+                user_id = 1926090919
             ),
             InlineKeyboardButton(
                 "📥 Whispers",
