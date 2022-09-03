@@ -76,7 +76,6 @@ DEFAULT_REPLY_MARKUP = InlineKeyboardMarkup(
 
 @Client.on_message(filters.text
                    & filters.incoming
-                   & ~filters.edited
                    & filters.command("start"))
 async def command_start(_, m: Message):
     if len(m.command) == 2 and m.command[1] == "learn":
