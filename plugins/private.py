@@ -46,14 +46,14 @@ LEARN_REPLY_MARKUP = InlineKeyboardMarkup(
 )
 
 DEFAULT_TEXT = (
-    "**This bot allows you to send whisper messages, works only in inline mode**\n"
+    "**This bot allows you to send whisper messages, works only in inline mode**\n\n"
     "💬 You can use me to send secret whispers in groups!"
 )
 DEFAULT_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "🍁 Send Whisper",
+                "🍁 Send whisper",
                 switch_inline_query=""
             ),
             InlineKeyboardButton(
@@ -63,11 +63,11 @@ DEFAULT_REPLY_MARKUP = InlineKeyboardMarkup(
         ],
         [
             InlineKeyboardButton(
-                "🧑🏻‍💻 Bot Creator",
+                "🧑🏻‍💻 Creator",
                 user_id = 1926090919
             ),
             InlineKeyboardButton(
-                "📥 My Whispers",
+                "📥 Whispers",
                 callback_data="list_whispers"
             )
         ]
