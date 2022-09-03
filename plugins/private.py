@@ -53,17 +53,21 @@ DEFAULT_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "🍁 Select a Chat to Try",
+                "☘️ Select to Try ",
                 switch_inline_query=""
             ),
             InlineKeyboardButton(
-                "👀 Try in This Chat",
+                "👀 Try here",
                 switch_inline_query_current_chat=""
             )
         ],
         [
             InlineKeyboardButton(
-                "🗂️ My Whispers",
+                "🧑🏻‍💻 Creator",
+                "https://t.me/VasuXD"
+            ),
+            InlineKeyboardButton(
+                "📥 Whispers",
                 callback_data="list_whispers"
             )
         ]
