@@ -14,9 +14,8 @@ app = Client(
     root="plugins",
     include=[
         "inline",
-        "private"
-    ]
-))
+        "private"])
+)
 
 # logging.basicConfig(level=logging.DEBUG)
 print('>>> BOT STARTED')
