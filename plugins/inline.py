@@ -74,15 +74,15 @@ async def answer_iq(_, iq: InlineQuery):
             f"{emoji.LOCKED_WITH_KEY} show message",
             callback_data="show_whisper"
         )
-    switch_pm_text = f"⁃ Learn how to send whispers"
+    switch_pm_text = f"✦ Learn how to send whispers to your friends!"
     switch_pm_parameter = "learn"
     await iq.answer(
         results=[
             InlineQueryResultArticle(
-                title=title,
+                #title=title,
                 input_message_content=InputTextMessageContent(content),
-                description=description,
-                thumb_url=WHISPER_ICON_URL,
+                #description=description,
+                #thumb_url=WHISPER_ICON_URL,
                 reply_markup=InlineKeyboardMarkup([[button]])
             )
         ],
