@@ -80,7 +80,7 @@ async def answer_iq(_, iq: InlineQuery):
         results=[
             InlineQueryResultArticle(
                 title=title,
-                input_message_content=InputTextMessageContent(content),
+                #input_message_content=InputTextMessageContent(content),
                 #description=description,
                 #thumb_url=WHISPER_ICON_URL,
                 reply_markup=InlineKeyboardMarkup([[button]])
