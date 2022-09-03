@@ -48,11 +48,11 @@ async def answer_iq(_, iq: InlineQuery):
             or (query.startswith('@') and len(split) == 1):
         title = f"{emoji.FIRE} Write a whisper message"
         content = ("**Send whisper messages through inline mode**\n\n"
-                   "Usage: `@ezWhisperBot [@username|@] text`")
-        description = "Usage: @ezWhisperBot [@username|@] text"
+                   "Usage: `@lyfsbot [@username] text`")
+        description = "Usage: @lyfsbot [@username] text"
         button = InlineKeyboardButton(
             "Learn more...",
-            url="https://t.me/ezWhisperBot?start=learn"
+            url="https://t.me/lyfsbot?start=learn"
         )
     elif not query.startswith('@'):
         title = f"{emoji.EYE} Whisper once to the first one who open it"
@@ -74,7 +74,7 @@ async def answer_iq(_, iq: InlineQuery):
             f"{emoji.LOCKED_WITH_KEY} show message",
             callback_data="show_whisper"
         )
-    switch_pm_text = f"{emoji.INFORMATION} Learn how to send whispers"
+    switch_pm_text = f"⁃ Learn how to send whispers"
     switch_pm_parameter = "learn"
     await iq.answer(
         results=[
