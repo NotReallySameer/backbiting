@@ -46,12 +46,12 @@ async def answer_iq(_, iq: InlineQuery):
     split = query.split(' ', 1)
     if query == '' or len(query) > ANSWER_CALLBACK_QUERY_MAX_LENGTH \
             or (query.startswith('@') and len(split) == 1):
-        title = f"{emoji.FIRE} Write a whisper message"
+        title = f"👉🏻 Write a whisper message"
         content = ("**Send whisper messages through inline mode**\n\n"
-                   "Usage: `@lyfsbot [@username] text`")
+                   "Usage: `@lyfsbot [Username or ID] text`")
         description = "Usage: @lyfsbot [@username] text"
         button = InlineKeyboardButton(
-            "Learn more...",
+            "📃 Learn more...",
             url="https://t.me/lyfsbot?start=learn"
         )
     elif not query.startswith('@'):
@@ -80,9 +80,9 @@ async def answer_iq(_, iq: InlineQuery):
         results=[
             InlineQueryResultArticle(
                 title=title,
-                #input_message_content=InputTextMessageContent(content),
-                #description=description,
-                #thumb_url=WHISPER_ICON_URL,
+                input_message_content=InputTextMessageContent(content),
+                description=description,
+                thumb_url=WHISPER_ICON_URL,
                 reply_markup=InlineKeyboardMarkup([[button]])
             )
         ],
