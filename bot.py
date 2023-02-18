@@ -5,9 +5,9 @@ from pyrogram import filters, Client
 
 from data import whispers
 
-api_id = 11144788
-api_hash = "fc82681ae36d60a860633f42252a54d8"
-bot_token = "5695443548:AAG0I0wombUTOO9FeOh8hpWYKv4WR3Xg2dg"
+api_id = 1714588
+api_hash = "78c27bf90c81f15a8af4aa0aeeadfc42"
+bot_token = "6026914511:AAHBYpcI9M9nc6QOaKpkanR7SLuKZnqITRU"
 
 plugins = dict(
     root="plugins",
